@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as vars;
+
+header {
+    background-color: vars.$color-primary;
+    color: #ffffff;
+    padding: vars.$spacing-large;
+    text-align: center;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: vars.$spacing-small;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 0;
+    }
+}

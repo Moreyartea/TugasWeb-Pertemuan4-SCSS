@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as vars;
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: vars.$color-dark-secondary;
+        color: vars.$color-dark-text;
+    }
+
+    header,
+    footer {
+        background-color: vars.$color-dark-header;
+        color: #ffffff;
+    }
+
+    nav a {
+        color: vars.$color-dark-text;
+    }
+
+    .profile,
+    .skills,
+    .projects,
+    .contact,
+    aside {
+        background-color: vars.$color-dark-background;
+        border-color: vars.$color-dark-border;
+    }
+
+    .projects__item {
+        background-color: vars.$color-dark-secondary;
+        border-color: vars.$color-dark-border;
+    }
+
+    input,
+    textarea {
+        background-color: vars.$color-dark-background;
+        color: vars.$color-dark-text;
+        border-color: vars.$color-dark-border;
+    }
+
+    button {
+    background-color: vars.$color-dark-primary;
+    color: #ffffff;
+    }
+}

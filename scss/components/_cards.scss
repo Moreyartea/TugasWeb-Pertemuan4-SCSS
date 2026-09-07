@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.profile,
+.skills,
+.projects,
+.contact,
+aside {
+    @include mixins.card-style;
+}
+
+.profile {
+    margin-bottom: vars.$spacing-large;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: vars.$spacing-large;
+
+        article {
+            flex: 1;
+        }
+
+        figure {
+            flex-shrink: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: vars.$radius;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: stretch;
+
+            figure {
+                order: -1;
+            }
+        }
+    }
+}
+
+.skills {
+    margin-bottom: vars.$spacing-large;
+
+    ul {
+        padding-left: 1.25rem;
+    }
+}
+
+.projects {
+    margin-bottom: 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: vars.$spacing-medium;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 1 1 250px;
+        padding: vars.$spacing-medium;
+        background-color: vars.$color-secondary;
+        border: 1px solid vars.$color-border;
+        border-radius: vars.$radius;
+
+        @media (max-width: 768px) {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+aside {
+    grid-area: aside;
+    align-self: start;
+}

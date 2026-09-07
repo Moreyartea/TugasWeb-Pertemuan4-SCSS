@@ -1,0 +1,27 @@
+$color-primary: #1f3c88;
+$color-secondary: #f4f7fb;
+$color-background: #ffffff;
+$color-text: #1f2937;
+$color-muted: #6b7280;
+$color-border: #d1d5db;
+
+$color-dark-primary: #8da9e8;
+$color-dark-secondary: #111827;
+$color-dark-background: #1f2937;
+$color-dark-text: #f9fafb;
+$color-dark-muted: #d1d5db;
+$color-dark-border: #374151;
+
+$color-dark-header: #0f172a;
+
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 2rem;
+
+$radius: 0.75rem;
+
+$spacing-sizes: (
+    small: $spacing-small,
+    medium: $spacing-medium,
+    large: $spacing-large
+);

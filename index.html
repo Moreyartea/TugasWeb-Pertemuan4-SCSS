@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page Pribadi - Fatih Taqiyyuddin</title>
+
+    <meta
+        name="description"
+        content="Landing page pribadi Fatih Taqiyyuddin, mahasiswa Ilmu Komputer Universitas Negeri Medan yang tertarik pada pemrograman dan teknologi."
+    >
+
+    <meta
+        property="og:title"
+        content="Landing Page Pribadi - Fatih Taqiyyuddin"
+    >
+    <meta
+        property="og:description"
+        content="Mengenal profil, kemampuan, project, dan kontak Fatih Taqiyyuddin."
+    >
+    <meta
+        property="og:type"
+        content="website"
+    >
+    <meta
+        property="og:image"
+        content="pria-sigma.jpg"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Fatih Taqiyyuddin</h1>
+        <p>Mahasiswa Ilmu Komputer Universitas Negeri Medan</p>
+
+        <nav aria-label="Menu halaman">
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#kompetensi">Kompetensi</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#hubungi">Hubungi Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-content">
+
+            <section id="profil" class="profile">
+                <h2>Profil Pribadi</h2>
+
+                <div class="profile__content">
+
+                    <article>
+                        <h3>Perkenalan</h3>
+
+                        <p>
+                            Saya merupakan mahasiswa Ilmu Komputer Universitas Negeri Medan
+                            yang memiliki ketertarikan terhadap pemrograman dan bercita-cita
+                            menjadi seorang detektif.
+                        </p>
+
+                        <p>
+                            Selama menjalani perkuliahan, saya mempelajari dasar-dasar
+                            pemrograman, pengembangan website, pengolahan data, dan berbagai
+                            konsep ilmu komputer lainnya.
+                        </p>
+
+                        <p>
+                            Profil ini diperbarui pada
+                            <time datetime="2026-08-23">23 Agustus 2026</time>.
+                        </p>
+                    </article>
+
+                    <figure>
+                        <img
+                            src="pria-sigma.jpg"
+                            alt="Foto profil Fatih Taqiyyuddin"
+                            width="250"
+                        >
+                        <figcaption>Foto profil Fatih Taqiyyuddin.</figcaption>
+                    </figure>
+
+                </div>
+            </section>
+
+            <section id="kompetensi" class="skills">
+                <h2>Kompetensi</h2>
+
+                <article>
+                    <h3>Bidang yang Ditekuni</h3>
+
+                    <p>
+                        Beberapa bidang yang sedang saya pelajari dan kembangkan
+                        meliputi:
+                    </p>
+
+                    <ul>
+                        <li>Pemrograman</li>
+                        <li>Pengembangan website</li>
+                        <li>Pengembangan aplikasi mobile</li>
+                        <li>HTML dan CSS</li>
+                        <li>JavaScript</li>
+                        <li>Olahraga</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="project" class="projects">
+                <h2>Project</h2>
+
+                <div class="projects__list">
+
+                    <article class="projects__item">
+                        <h3>NoteZ</h3>
+
+                        <p>
+                            Aplikasi mobile produktivitas personal dengan arsitektur offline,
+                            data awal tersimpan lokal di perangkat, dengan opsi sinkronisasi
+                            ke cloud. Dilengkapi fitur pencatatan keuangan dan wishlist
+                            dengan format Rupiah.
+                        </p>
+                    </article>
+
+                    <article class="projects__item">
+                        <h3>StokTeknik</h3>
+
+                        <p>
+                            Aplikasi manajemen stok yang dikembangkan untuk klien,
+                            usaha reparasi elektronik (mesin las inverter & TV).
+                            Mencakup pelacakan stok, manajemen pekerjaan servis,
+                            riwayat, laporan, hingga nota servis yang bisa dicetak langsung.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+
+        <aside>
+            <h2>Informasi Lain</h2>
+
+            <h3>Ketertarikan</h3>
+
+            <p>
+                Selain kegiatan akademik, saya memiliki ketertarikan terhadap
+                pemrograman, olahraga, dan dunia misteri.
+            </p>
+        </aside>
+
+        <section id="hubungi" class="contact">
+            <h2>Hubungi Saya</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="nama">Nama lengkap:</label><br>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        required
+                        placeholder="Masukkan nama lengkap"
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Alamat email:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="emailkamu@gmail.com"
+                    >
+                </p>
+
+                <p>
+                    <label for="tanggal">Tanggal yang diinginkan:</label><br>
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                    >
+                </p>
+
+                <p>
+                    <label for="warna">Warna pilihan:</label><br>
+                    <input
+                        type="color"
+                        id="warna"
+                        name="warna"
+                        value="#000000"
+                    >
+                </p>
+
+                <p>
+                    <label for="prioritas">Tingkat prioritas:</label><br>
+                    <input
+                        type="range"
+                        id="prioritas"
+                        name="prioritas"
+                        min="1"
+                        max="10"
+                        value="5"
+                    >
+                </p>
+
+                <p>
+                    <label for="pesan">Isi pesan:</label><br>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        required
+                        placeholder="Masukkan pesan Anda di sini"
+                    ></textarea>
+                </p>
+
+                <button type="submit">Kirim Pesan</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fatih Taqiyyuddin.</p>
+    </footer>
+
+</body>
+</html>

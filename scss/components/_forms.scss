@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.contact {
+    grid-area: contact;
+
+    form {
+        p {
+            margin-bottom: vars.$spacing-medium;
+        }
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+
+    border: 1px solid vars.$color-border;
+    border-radius: vars.$radius;
+    background-color: vars.$color-background;
+    color: vars.$color-text;
+}
+
+input {
+    &[type="color"] {
+        width: 80px;
+        height: 45px;
+        padding: 0.25rem;
+    }
+
+    &[type="range"] {
+        padding: 0;
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    border: none;
+    border-radius: vars.$radius;
+
+    background-color: vars.$color-primary;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    @include mixins.transition;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

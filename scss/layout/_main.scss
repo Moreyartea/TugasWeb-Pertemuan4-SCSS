@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as vars;
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-areas:
+        "content aside"
+        "contact aside";
+
+    gap: vars.$spacing-large;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: vars.$spacing-large;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "content"
+            "aside"
+            "contact";
+    }
+}
+
+.main-content {
+    grid-area: content;
+    min-width: 0;
+}
